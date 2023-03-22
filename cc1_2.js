@@ -81,11 +81,11 @@
 
 //Coding Challenge 4
 
-const bill = 430;
+const bill = 40;
 let tip;
 
-bill>=50 && bill <=300 ? tip = bill*0.15 : tip = bill * 0.2;
-console.log(bill, tip);
+console.log(`the bill is £${bill} and the tip is £${bill>=50 && bill <=300 ? tip = bill*0.15 : tip = bill * 0.2} therefore the total amount payable is £${bill+tip}`);
+//console.log(bill, tip);
 
 console.log(`The bill was £${bill}, the tip was £${tip} and the total value £${bill+tip}`)
 
