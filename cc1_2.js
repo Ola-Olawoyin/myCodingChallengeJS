@@ -1,3 +1,6 @@
+'use strict';
+
+
 //Coding challenge 1&2
 // let massJohn = 92;
 // let heightJohn = 1.95;
