@@ -84,13 +84,46 @@
 
 //Coding Challenge 4
 
-const bill = 40;
-let tip;
+// const bill = 40;
+// let tip;
 
-console.log(`the bill is £${bill} and the tip is £${bill>=50 && bill <=300 ? tip = bill*0.15 : tip = bill * 0.2} therefore the total amount payable is £${bill+tip}`);
-//console.log(bill, tip);
+// console.log(`the bill is £${bill} and the tip is £${bill>=50 && bill <=300 ? tip = bill*0.15 : tip = bill * 0.2} therefore the total amount payable is £${bill+tip}`);
+// //console.log(bill, tip);
 
-console.log(`The bill was £${bill}, the tip was £${tip} and the total value £${bill+tip}`)
+// console.log(`The bill was £${bill}, the tip was £${tip} and the total value £${bill+tip}`)
 
+//Coding Challenge 5
+
+//calcAverage arrow function
+
+const calcAverage = (score1, score2, score3) => {
+
+    const average = (score1 + score2 + score3) / 3
+
+    return average;
+
+};
+
+let averageDolphins = calcAverage(23, 34, 27);
+
+let averageKoalas = calcAverage(85, 54, 41);
+
+
+const checkWinner = function (avgDolphin, avgKoalas) {
+
+
+    if (avgDolphin >= avgKoalas * 2) {
+        return console.log(`Dolphin wins (${avgDolphin} vs. ${avgKoalas})`)
+    }
+    else if ((avgKoalas >= avgDolphin * 2)) {
+        return console.log(`Koalas wins  ${avgKoalas} vs.${avgDolphin}`)
+    }
+    else {
+        return console.log(`No winner has emerged, condition for a winner to emerge not met`)
+    }
+
+}
+
+checkWinner(averageDolphins, averageKoalas);
 
 
